@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto&display=swap');
+
+/* font-family: 'Oswald', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+body{
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(0, 255, 255);
+}
+
+.heading{
+    height: 80px;
+    box-shadow:         0px 6px 2px 0px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0px 6px 2px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow:    0px 6px 2px 0px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba(0, 255, 255, 0.75);
+    padding: 22px;
+    
+}
+
+.void{
+    height: 85px;
+}
+
+.container .row div .sides{
+    height: auto;
+    padding-top: 30px;
+}
+
+.hide{
+    display: none;
+}
+
+.container .row div .sides p:hover{
+    color: white;
+    font-size: 20px;
+    border-bottom: 2px dotted rgba(251, 252, 252, 0.75);
+}
+
+.container .row div table tr:hover{
+    color: rgb(218, 29, 29);
+    font-size: 19px;
+    border-bottom: 2px dotted rgba(251, 252, 252, 0.75);
+}
+
+.container .row div table tr th{
+    padding: 5px;
+}
+
+button{
+        border: double;
+        margin-bottom: 10px;
+}
+
+
+
+
+/* .navbar-light, .bg-light{
+    background-color: #fff !important;
+}
+
+.btn.btn-default{
+    background-color: transparent;
+    border: 2px solid rgb(8, 54, 151)   ;
+    padding: 7px 15px !important;
+    margin: 0 10px;
+    font-size: 18px;
+    height: 45px;
+    width: 160px;
+    color: rgb(8, 54, 151) !important;
+}
+
+.banner{
+    padding-top: 12%;
+}
+
+.banner h4{
+    color: darkgray;
+}
+
+.banner h1{
+    font-size: 55px;
+
+}
+
+.agency{
+    background-color: rgb(230, 223, 223);
+    padding: 6% 0%;
+} */
