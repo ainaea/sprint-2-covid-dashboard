@@ -28,6 +28,23 @@ body{
 .container .row div .sides{
     height: auto;
     padding-top: 30px;
+    width: 100%;
+}
+
+.container .row .presides{
+    background-color: rgba(39, 98, 209, 0.233);
+    border:2px rgb(73, 167, 204) solid;
+    color: rgb(58, 89, 146);
+}
+
+.container .row .presides:hover{
+    margin: 25px 0px;
+}
+
+.container .row .middle{
+    background-color: rgba(26, 87, 219, 0.63);
+    color: rgb(22, 77, 122);
+
 }
 
 .hide{
@@ -35,7 +52,7 @@ body{
 }
 
 .container .row div .sides p:hover{
-    color: white;
+    color: rgb(9, 25, 247);
     font-size: 20px;
     border-bottom: 2px dotted rgba(251, 252, 252, 0.75);
 }
@@ -55,6 +72,9 @@ button{
         margin-bottom: 10px;
 }
 
+div{
+    overflow: hidden;
+}
 
 
 

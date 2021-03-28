@@ -1,6 +1,16 @@
 
-$( "button#btn" ).on( "click", GetData);
+// $( "button#btn" ).on( "click", GetData);
+$( document ).ready( GetData);
+// $(document).ready( function () {
+//     $('#table_id').DataTable();
+// } );
 
+function hello() {
+    alert('hey there');
+    $('#table_id').DataTable();
+
+    
+}
 
 //Fetch data and update UI content
 function GetData() {
@@ -14,9 +24,31 @@ function GetData() {
             UpdateUI(data.Global);
             //Nigeria data is modified here
             UpdateUI(data.Countries[125], 'nigeria');
-            $(`div.data` ).html( TableFromArray(data.Countries) );
+
+            // $(`div.data` ).append( TableFromArray(data.Countries) );
+            // $('#myTable').DataTable();
+            // const doThis = data.Countries;
+
+            $(document).ready(function () {
+                $('#myTable').DataTable();
+            });
+
+            $('div.data').html(function () {
+               $('#myTable tbody' ).append( TableFromArray(data.Countries) );
+
+            })
+            // hello();
+            
+            // $('#table_id').DataTable();
 
         })
+            // $('#table_id').DataTable();
+            // $(document).ready( function () {
+            //     $('#table_id').DataTable();
+            // } );
+            
+
+        // .then(()=>{alert("Done")});
     
 }
 
@@ -43,19 +75,21 @@ function UpdateUI(inData, x='global') {
 
 //This function generates the entire table based on the array of data passed.
 function TableFromArray(arr) {
-    var str = `
-    <table>
-        <tr>
-            <th>S/N</th>
-            <th>Country</th>
-            <th>New Confirmed</th>
-            <th>New Death</th>
-            <th>New Recovered</th>
-            <th>Total Confirmed</th>
-            <th>Total Death</th>
-            <th>Total Recovered</th>
-        </tr>  
-        `;
+    // var str = `
+    // <table id="table_id">
+    //     <tr>
+    //         <th>S/N</th>
+    //         <th>Country</th>
+    //         <th>New Confirmed</th>
+    //         <th>New Death</th>
+    //         <th>New Recovered</th>
+    //         <th>Total Confirmed</th>
+    //         <th>Total Death</th>
+    //         <th>Total Recovered</th>
+    //     </tr>  
+    //     `;
+    var str = ``;
+
 //The loop below generate the table rows
     for (const [i,elt] of arr.entries() ) {
         str += `
@@ -71,9 +105,9 @@ function TableFromArray(arr) {
         </tr> 
         `;
     }
-    str += `
-    </table>
-    `;
+    // str += `
+    // </table>
+    // `;
     // console.log(str);
     return str;
 }
