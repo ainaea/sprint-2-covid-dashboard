@@ -31,14 +31,22 @@ body{
     width: 100%;
 }
 
+.container .row div .sides p{
+    border-bottom: 2px dotted rgb(34, 54, 235);
+}
+
 .container .row .presides{
     background-color: rgba(39, 98, 209, 0.233);
     border:2px rgb(73, 167, 204) solid;
     color: rgb(58, 89, 146);
+    border: 2px solid turquoise;
 }
 
 .container .row .presides:hover{
     margin: 25px 0px;
+    /* box-shadow: 10px 12px red; */
+    background-color: white;
+    border-radius: 35px;
 }
 
 .container .row .middle{
@@ -74,6 +82,10 @@ button{
 
 div{
     overflow: hidden;
+}
+
+.bottomstyle{
+    border-bottom:  5px solid rgb(90, 88, 235);
 }
 
 
